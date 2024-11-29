@@ -38,6 +38,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     unlink($csvFile);
 }
+    <head>
+    <meta http-equiv="refresh" content="10; index.html">
+</head>
 ?>
 <script>
 javascript: setTimeout('window.close()',10000)
