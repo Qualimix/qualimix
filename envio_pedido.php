@@ -38,8 +38,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     unlink($csvFile);
 }
-   <script>
+?>
+<script>
 javascript: setTimeout('window.close()',10000)
 </script>
-?>
     
