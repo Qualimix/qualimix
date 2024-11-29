@@ -1,3 +1,6 @@
+ <head>
+    <meta http-equiv="refresh" content="10; index.html">
+</head>
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $data = json_decode(file_get_contents("php://input"), true);
@@ -38,9 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     unlink($csvFile);
 }
-    <head>
-    <meta http-equiv="refresh" content="10; index.html">
-</head>
+   
 ?>
 <script>
 javascript: setTimeout('window.close()',10000)
