@@ -38,6 +38,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     unlink($csvFile);
 }
-    exit("Pedido enviado com sucesso, aguarde confirmação")
+    exit("Pedido enviado com sucesso, aguarde confirmação");
 ?>
     
