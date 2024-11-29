@@ -38,6 +38,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     unlink($csvFile);
 }
-    exit("Pedido enviado com sucesso, aguarde confirmação");
+   <script>
+javascript: setTimeout('window.close()',10000)
+</script>
 ?>
     
