@@ -271,42 +271,17 @@
             message += `- ${product}: ${quantity} unidade(s)\n`;
         }
 
-	    Dim token, chatId, message
-token = "8115859320:AAE29auJ_nejimK1rJqdA_TTtNjiOj8ffHY"
-chatId = "-1002276007218"
-//message = 'Informe a Mensagem
 
-Dim url, xmlhttp, payload, json
 
-url = “https://api.telegram.org/bot 5” & token & “/sendMessage”
-payload = “{”“chat_id”":""" & chatId & “”","“text”":""" & {encodeURIComponent(message) & “”","“parse_mode”":"“Markdown”"}"
+         //Número do Bot de Telegram (substitua com o token do bot e ID do chat)
+        const botToken = "8115859320:AAE29auJ_nejimK1rJqdA_TTtNjiOj8ffHY";  // Substitua com o token do seu bot
+        const chatId = "-1002276007218";      // Substitua com o ID do chat
 
-Set xmlhttp = CreateObject(“MSXML2.ServerXMLHTTP.6.0”)
-xmlhttp.Open “POST”, url, False
-xmlhttp.setRequestHeader “Content-Type”, “application/json”
-xmlhttp.Send payload
-
-If xmlhttp.Status = 200 Then
-Mensagem enviada com sucesso
-json = xmlhttp.responseText
-MsgBox "Mensagem enviada: " & json
-Else
-Erro ao enviar a mensagem
-MsgBox "Erro ao enviar mensagem: " & xmlhttp.statusText
-End If
-
-Set xmlhttp = Nothing
-Set xmlhttp = Nothing
-
-        // Número do Bot de Telegram (substitua com o token do bot e ID do chat)
-        //const botToken = "8115859320:AAE29auJ_nejimK1rJqdA_TTtNjiOj8ffHY";  // Substitua com o token do seu bot
-        //const chatId = "-1002276007218";      // Substitua com o ID do chat
-
-        // URL da API do Telegram
-        //const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+       // URL da API do Telegram
+        const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
 
         // Abrir o link para enviar a mensagem
-        //window.open(url, "_blank");
+        window.open(url, "_blank");
 		
 close;
 	    
