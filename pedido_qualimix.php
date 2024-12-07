@@ -80,7 +80,7 @@
                 <select class="product" required>
 	<?php
                 // Configurações do banco de dados
-                $host = 'localhost';
+                $host = 'pbxvoip.ddns.net';
                 $db = 'qualimix_db';
                 $user = 'root'; // Altere para seu usuário do MySQL
                 $password = ''; // Altere para sua senha do MySQL
@@ -137,7 +137,7 @@
             <select class="product" required>
                 <?php
                 // Configurações do banco de dados
-                $host = 'localhost';
+                $host = 'pbxvoip.ddns.net';
                 $db = 'qualimix_db';
                 $user = 'root'; // Altere para seu usuário do MySQL
                 $password = ''; // Altere para sua senha do MySQL
