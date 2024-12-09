@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Produtos - Qualimix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+        button {
+            background-color: #0088cc;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0077bb;
+        }
+        .product-item {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .product-item input, .product-item select {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Pedido de Produtos Qualimix</h2>
+    <form id="orderForm">
+        <label for="name">Nome ou Empresa:</label>
+        <input type="text" id="name" placeholder="Digite seu nome" required>
+		
+		
+		
+		
+		
+		
+
+        <div id="product-list">
+            <div class="product-item">
+		
+                <select class="product" required>
+	
+
+                    
+                   
+                       <option value="BOLO DE LARANJA">BOLO DE LARANJA</option>
+<option value="BOLO DE ABACAXI">BOLO DE ABACAXI</option>
+<option value="BOLO DE MARACUJÁ">BOLO DE MARACUJÁ</option>
+<option value="BOLO DE CENOURA">BOLO DE CENOURA</option>
+<option value="BOLO DE FUBÁ">BOLO DE FUBÁ</option>
+<option value="BOLO DE CHURROS">BOLO DE CHURROS</option>
+<option value="BOLO DE COCO">BOLO DE COCO</option>
+<option value="BOLO DE MILHO">BOLO DE MILHO</option>
+<option value="BOLO DE AIPIM">BOLO DE AIPIM</option>
+<option value="BOLO DE CHOCOLATE">BOLO DE CHOCOLATE</option>
+<option value="BOLO NEUTRO">BOLO NEUTRO</option>
+<option value="BOLO CR. DE AIPIM">BOLO CR. DE AIPIM</option>
+<option value="BOLO CR. CHOCOLATE">BOLO CR. CHOCOLATE</option>
+<option value="BOLO CR. MILHO">BOLO CR. MILHO</option>
+<option value="BOLO CR. PAMONHA">BOLO CR. PAMONHA</option>
+<option value="BOLO CR. CAÇAROLA">BOLO CR. CAÇAROLA</option>
+<option value="BOLO DE BANANA">BOLO DE BANANA</option>
+<option value="CAKE NEUTRO 5 KG">CAKE NEUTRO 5 KG</option>
+<option value="CAKE CHOCOLATE 5 KG">CAKE CHOCOLATE 5 KG</option>
+<option value="CAKE INDIANO 5 KG">CAKE INDIANO 5 KG</option>
+<option value="CAKE CENOURA 5KG">CAKE CENOURA 5KG</option>
+<option value="CAKE CENOURA 2 KG">CAKE CENOURA 2 KG</option>
+<option value="CAKE FUBÁ 2 KG">CAKE FUBÁ 2 KG</option>
+<option value="CAKE NEUTRO 2 KG">CAKE NEUTRO 2 KG</option>
+<option value="CAKE RED 5X2 KG">CAKE RED 5X2 KG</option>
+<option value="CAKE CHOCOLATE 5X2 KG">CAKE CHOCOLATE 5X2 KG</option>
+<option value="CAKE LEITINHO 5X2 KG">CAKE LEITINHO 5X2 KG</option>
+<option value="BISCOITO POLVILHO">BISCOITO POLVILHO</option>
+<option value="BRIOCHE">BRIOCHE</option>
+<option value="PÃO DE BATATA">PÃO DE BATATA</option>
+<option value="PÃO LÓ BAUNILHA">PÃO LÓ BAUNILHA</option>
+<option value="PÃO LEITINHO">PÃO LEITINHO</option>
+<option value="TAPIOCA">TAPIOCA</option>
+<option value="MANDIOQUINHA">MANDIOQUINHA</option>
+<option value="PAO DE ALHO">PAO DE ALHO</option>
+<option value="BROA DE MILHO">BROA DE MILHO</option>
+<option value="RECHEIO DE COCO 4KG">RECHEIO DE COCO 4KG</option>
+<option value="RECHEIO DE MORANGO 4KG">RECHEIO DE MORANGO 4KG</option>
+<option value="RECHEIO DE BRIGADEIRO">RECHEIO DE BRIGADEIRO</option>
+<option value="RECHEIO MARACUJÁ BD">RECHEIO MARACUJÁ BD</option>
+<option value="RECHEIO CHOCOLATE BD">RECHEIO CHOCOLATE BD</option>
+<option value="RECHEIO LEITE NINHO BD">RECHEIO LEITE NINHO BD</option>
+<option value="RECHEIO LIMAO BD">RECHEIO LIMAO BD</option>
+<option value="RECHEIO BOM BOM 4K">RECHEIO BOM BOM 4K</option>
+<option value="RC. LEITE CONDENSADO BD">RC. LEITE CONDENSADO BD</option>
+<option value="RECHEIO GOIABA BD">RECHEIO GOIABA BD</option>
+<option value="BISNAGA CHOCOLATE CX.">BISNAGA CHOCOLATE CX.</option>
+<option value="BISNAGA BAVARIANO CX.">BISNAGA BAVARIANO CX.</option>
+<option value="BISNAGA LIMAO CX.">BISNAGA LIMAO CX.</option>
+<option value="BISNAGA BRIGADEIRO CX.">BISNAGA BRIGADEIRO CX.</option>
+<option value="BISNAGA MORANGO CX.">BISNAGA MORANGO CX.</option>
+<option value="BISNAGA BOMBOM CX.">BISNAGA BOMBOM CX.</option>
+<option value="BISNAGA GOIABA CX.">BISNAGA GOIABA CX.</option>
+<option value="BISNAGA MARACUJÁ CX.">BISNAGA MARACUJÁ CX.</option>
+<option value="CALDA DE PUDIM">CALDA DE PUDIM</option>
+<option value="CIABATTA">CIABATTA</option>
+<option value="PÃO FRANCES INTEGRAL">PÃO FRANCES INTEGRAL</option>
+<option value="PAO DE COCO">PAO DE COCO</option>
+<option value="PAO DA VOVÓ">PAO DA VOVÓ</option>
+<option value="MELHORADOR">MELHORADOR</option>
+<option value="PAO DE MILHO">PAO DE MILHO</option>
+<option value="TORTA SALGADA">TORTA SALGADA</option>
+<option value="PAO HOT DOG">PAO HOT DOG</option>
+<option value="PAO DE LARANJA">PAO DE LARANJA</option>
+<option value="PAO DE CEBOLA">PAO DE CEBOLA</option>
+<option value="BREAD CROCK">BREAD CROCK</option>
+<option value="FAROFA DOCE">FAROFA DOCE</option>
+<option value="PAO DE LÓ CHOCOLATE">PAO DE LÓ CHOCOLATE</option>
+<option value="PAO MULTIUSO 5 KG">PAO MULTIUSO 5 KG</option>
+<option value="FD CREME CONFEITEIRO">FD CREME CONFEITEIRO</option>
+<option value="VITAMALTE">VITAMALTE</option>
+<option value="FERMENTO QUIMICO">FERMENTO QUIMICO</option>
+<option value="ANTI MOFO LIQUIDO">ANTI MOFO LIQUIDO</option>
+<option value="BRILHO FRUTAS VERMELHAS">BRILHO FRUTAS VERMELHAS</option>
+<option value="BRILHO NEUTRO">BRILHO NEUTRO</option>
+<option value="BRILHO DE CHOCOLATE">BRILHO DE CHOCOLATE</option>
+<option value="BRILHO DE MORANGO">BRILHO DE MORANGO</option>
+<option value="BRILHO DE LIMÃO">BRILHO DE LIMÃO</option>
+<option value="BRILHO DE MARACUJÁ">BRILHO DE MARACUJÁ</option>
+						
+                 
+				
+                </select>
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+                <input type="number" class="quantity" min="1" placeholder="Quantidade" required>
+            </div>
+        </div>
+
+        <button type="button" onclick="addProduct()">Adicionar Produto</button>
+        <button type="button" onclick="sendOrder()">Enviar Pedido via Telegram</button>
+    </form>
+	  Após envio do pedido, pode fechar a página que irá abrir!
+</div>
+
+<script>
+    // Função para adicionar um novo produto ao pedido
+    function addProduct() {
+        const productList = document.getElementById("product-list");
+        const productItem = document.createElement("div");
+        productItem.classList.add("product-item");
+        productItem.innerHTML = `
+            <select class="product" required>
+                
+                    // Preenche o campo de seleção com os produtos
+<option value="BOLO DE LARANJA">BOLO DE LARANJA</option>
+<option value="BOLO DE ABACAXI">BOLO DE ABACAXI</option>
+<option value="BOLO DE MARACUJÁ">BOLO DE MARACUJÁ</option>
+<option value="BOLO DE CENOURA">BOLO DE CENOURA</option>
+<option value="BOLO DE FUBÁ">BOLO DE FUBÁ</option>
+<option value="BOLO DE CHURROS">BOLO DE CHURROS</option>
+<option value="BOLO DE COCO">BOLO DE COCO</option>
+<option value="BOLO DE MILHO">BOLO DE MILHO</option>
+<option value="BOLO DE AIPIM">BOLO DE AIPIM</option>
+<option value="BOLO DE CHOCOLATE">BOLO DE CHOCOLATE</option>
+<option value="BOLO NEUTRO">BOLO NEUTRO</option>
+<option value="BOLO CR. DE AIPIM">BOLO CR. DE AIPIM</option>
+<option value="BOLO CR. CHOCOLATE">BOLO CR. CHOCOLATE</option>
+<option value="BOLO CR. MILHO">BOLO CR. MILHO</option>
+<option value="BOLO CR. PAMONHA">BOLO CR. PAMONHA</option>
+<option value="BOLO CR. CAÇAROLA">BOLO CR. CAÇAROLA</option>
+<option value="BOLO DE BANANA">BOLO DE BANANA</option>
+<option value="CAKE NEUTRO 5 KG">CAKE NEUTRO 5 KG</option>
+<option value="CAKE CHOCOLATE 5 KG">CAKE CHOCOLATE 5 KG</option>
+<option value="CAKE INDIANO 5 KG">CAKE INDIANO 5 KG</option>
+<option value="CAKE CENOURA 5KG">CAKE CENOURA 5KG</option>
+<option value="CAKE CENOURA 2 KG">CAKE CENOURA 2 KG</option>
+<option value="CAKE FUBÁ 2 KG">CAKE FUBÁ 2 KG</option>
+<option value="CAKE NEUTRO 2 KG">CAKE NEUTRO 2 KG</option>
+<option value="CAKE RED 5X2 KG">CAKE RED 5X2 KG</option>
+<option value="CAKE CHOCOLATE 5X2 KG">CAKE CHOCOLATE 5X2 KG</option>
+<option value="CAKE LEITINHO 5X2 KG">CAKE LEITINHO 5X2 KG</option>
+<option value="BISCOITO POLVILHO">BISCOITO POLVILHO</option>
+<option value="BRIOCHE">BRIOCHE</option>
+<option value="PÃO DE BATATA">PÃO DE BATATA</option>
+<option value="PÃO LÓ BAUNILHA">PÃO LÓ BAUNILHA</option>
+<option value="PÃO LEITINHO">PÃO LEITINHO</option>
+<option value="TAPIOCA">TAPIOCA</option>
+<option value="MANDIOQUINHA">MANDIOQUINHA</option>
+<option value="PAO DE ALHO">PAO DE ALHO</option>
+<option value="BROA DE MILHO">BROA DE MILHO</option>
+<option value="RECHEIO DE COCO 4KG">RECHEIO DE COCO 4KG</option>
+<option value="RECHEIO DE MORANGO 4KG">RECHEIO DE MORANGO 4KG</option>
+<option value="RECHEIO DE BRIGADEIRO">RECHEIO DE BRIGADEIRO</option>
+<option value="RECHEIO MARACUJÁ BD">RECHEIO MARACUJÁ BD</option>
+<option value="RECHEIO CHOCOLATE BD">RECHEIO CHOCOLATE BD</option>
+<option value="RECHEIO LEITE NINHO BD">RECHEIO LEITE NINHO BD</option>
+<option value="RECHEIO LIMAO BD">RECHEIO LIMAO BD</option>
+<option value="RECHEIO BOM BOM 4K">RECHEIO BOM BOM 4K</option>
+<option value="RC. LEITE CONDENSADO BD">RC. LEITE CONDENSADO BD</option>
+<option value="RECHEIO GOIABA BD">RECHEIO GOIABA BD</option>
+<option value="BISNAGA CHOCOLATE CX.">BISNAGA CHOCOLATE CX.</option>
+<option value="BISNAGA BAVARIANO CX.">BISNAGA BAVARIANO CX.</option>
+<option value="BISNAGA LIMAO CX.">BISNAGA LIMAO CX.</option>
+<option value="BISNAGA BRIGADEIRO CX.">BISNAGA BRIGADEIRO CX.</option>
+<option value="BISNAGA MORANGO CX.">BISNAGA MORANGO CX.</option>
+<option value="BISNAGA BOMBOM CX.">BISNAGA BOMBOM CX.</option>
+<option value="BISNAGA GOIABA CX.">BISNAGA GOIABA CX.</option>
+<option value="BISNAGA MARACUJÁ CX.">BISNAGA MARACUJÁ CX.</option>
+<option value="CALDA DE PUDIM">CALDA DE PUDIM</option>
+<option value="CIABATTA">CIABATTA</option>
+<option value="PÃO FRANCES INTEGRAL">PÃO FRANCES INTEGRAL</option>
+<option value="PAO DE COCO">PAO DE COCO</option>
+<option value="PAO DA VOVÓ">PAO DA VOVÓ</option>
+<option value="MELHORADOR">MELHORADOR</option>
+<option value="PAO DE MILHO">PAO DE MILHO</option>
+<option value="TORTA SALGADA">TORTA SALGADA</option>
+<option value="PAO HOT DOG">PAO HOT DOG</option>
+<option value="PAO DE LARANJA">PAO DE LARANJA</option>
+<option value="PAO DE CEBOLA">PAO DE CEBOLA</option>
+<option value="BREAD CROCK">BREAD CROCK</option>
+<option value="FAROFA DOCE">FAROFA DOCE</option>
+<option value="PAO DE LÓ CHOCOLATE">PAO DE LÓ CHOCOLATE</option>
+<option value="PAO MULTIUSO 5 KG">PAO MULTIUSO 5 KG</option>
+<option value="FD CREME CONFEITEIRO">FD CREME CONFEITEIRO</option>
+<option value="VITAMALTE">VITAMALTE</option>
+<option value="FERMENTO QUIMICO">FERMENTO QUIMICO</option>
+<option value="ANTI MOFO LIQUIDO">ANTI MOFO LIQUIDO</option>
+<option value="BRILHO FRUTAS VERMELHAS">BRILHO FRUTAS VERMELHAS</option>
+<option value="BRILHO NEUTRO">BRILHO NEUTRO</option>
+<option value="BRILHO DE CHOCOLATE">BRILHO DE CHOCOLATE</option>
+<option value="BRILHO DE MORANGO">BRILHO DE MORANGO</option>
+<option value="BRILHO DE LIMÃO">BRILHO DE LIMÃO</option>
+<option value="BRILHO DE MARACUJÁ">BRILHO DE MARACUJÁ</option>
+				
+            </select>
+			
+            <input type="number" class="quantity" min="1" placeholder="Quantidade" required>
+        `;
+        productList.appendChild(productItem);
+    }
+
+    // Função para enviar o pedido via Telegram
+    function sendOrder() {
+        const name = document.getElementById("name").value;
+        const productElements = document.querySelectorAll(".product");
+        const quantityElements = document.querySelectorAll(".quantity");
+
+        // Construir a mensagem do pedido
+        let message = `Olá, meu nome é ${name}. Gostaria de pedir:\n`;
+        for (let i = 0; i < productElements.length; i++) {
+            const product = productElements[i].value;
+            const quantity = quantityElements[i].value;
+            message += `- ${product}: ${quantity} unidade(s)\n`;
+        }
+
+        // Número do Bot de Telegram (substitua com o token do bot e ID do chat)
+        const botToken = "8115859320:AAE29auJ_nejimK1rJqdA_TTtNjiOj8ffHY";  // Substitua com o token do seu bot
+        const chatId = "-1002276007218";      // Substitua com o ID do chat
+
+        // URL da API do Telegram
+        const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+
+        // Abrir o link para enviar a mensagem
+        window.open(url, "_blank");
+		close;
+    }
+</script>
+
+</body>
+</html>
